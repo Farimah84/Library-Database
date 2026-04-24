@@ -96,7 +96,7 @@ SELECT
 FROM Books 
 JOIN Authors ON Books.AuthorID = Authors.AuthorID;
 
--- 8.
+-- 8. Three-table join to display borrowed books along with the member (similar to the concept of natural join)
 SELECT 
     Loans.LoanID,
     Members.FirstName || ' ' || Members.LastName AS MemberName,
