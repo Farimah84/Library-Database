@@ -1,4 +1,4 @@
--- اComplete Library Database
+-- Complete Library Database
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Members (
     MemberID INTEGER PRIMARY KEY AUTOINCREMENT,
