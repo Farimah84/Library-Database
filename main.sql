@@ -50,7 +50,7 @@ INSERT INTO Authors (FirstName, LastName, BirthYear, Country) VALUES
 ('Virginia', 'Woolf', 1941, 'England'),
 ('Forough', 'Farrokhzad', 1934, 'Iran'),
 ('Bahram', 'Beizai', 1938, 'Iran'),
-('Samad', 'Behrangi', 1939, 'Iran'); -- سال 1339 هجری شمسی معادل حدود 1960 میلادی نیست، برای سادگی 1939 در نظر گرفته شد.
+('Samad', 'Behrangi', 1939, 'Iran');
 
 INSERT INTO Books (Title, AuthorID, Publisher, Category, AvailableCopies) VALUES
 ('1984', 1, 'Niloufar Publishing', 'Political', 3),
