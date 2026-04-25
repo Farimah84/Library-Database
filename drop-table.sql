@@ -1,5 +1,0 @@
--- Deleting Tables
-DROP TABLE IF EXISTS Loans;
-DROP TABLE IF EXISTS Books;
-DROP TABLE IF EXISTS Authors;
-DROP TABLE IF EXISTS Members;
