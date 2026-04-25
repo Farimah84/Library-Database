@@ -57,7 +57,8 @@ INSERT INTO Books (Title, AuthorID, Publisher, Category, AvailableCopies) VALUES
 ('A Room of Ones Own', 2, 'Niloufar Publishing', 'Feminism', 2),
 ('The Complete Poems of Forough', 3, 'Negah Publishing', 'Poetical', 4),
 ('Siavash-Khani', 4, 'Roushan-Fekran Publishing', 'Dramatic Literature', 1),
-('Little Black Fish', 5, 'Nazar Publishing', 'Narrative Fiction', 3);
+('Little Black Fish', 5, 'Nazar Publishing', 'Narrative Fiction', 3),
+('Animal Farm', 1, 'Mahi Publishing', 'Political', 3); 
 
 INSERT INTO Loans (MemberID, BookID, LoanDate, ReturnDate, Status) VALUES
 (1, 1, '2024-06-01', '2024-06-14', 'Returned'),
