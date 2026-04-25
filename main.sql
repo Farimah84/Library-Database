@@ -96,7 +96,7 @@ SELECT
 FROM Books 
 JOIN Authors ON Books.AuthorID = Authors.AuthorID;
 
--- 8. پیوند سه جدوله برای نمایش کتاب‌های امانت رفته به همراه عضو (مشابه مفهوم پیوند طبیعی)
+-- 8. Three-table join to display borrowed books along with the member (similar to the concept of natural join)
 SELECT 
     Loans.LoanID,
     Members.FirstName || ' ' || Members.LastName AS MemberName,
@@ -112,12 +112,12 @@ SELECT Title FROM Books WHERE AuthorID = 1
 UNION
 SELECT Title FROM Books WHERE AvailableCopies > 2;
 
--- 10. INTERSECT (اشتراک)
+-- 10. INTERSECT 
 SELECT Title FROM Books WHERE AuthorID = 1
 INTERSECT
 SELECT Title FROM Books WHERE AvailableCopies > 2;
 
--- 11. EXCEPT (تفاضل)
+-- 11. EXCEPT 
 SELECT Title FROM Books WHERE AuthorID = 1
 EXCEPT
 SELECT Title FROM Books WHERE AvailableCopies > 2;
@@ -131,7 +131,7 @@ UPDATE Members
 SET Email = 'mahshad.new@email.com' 
 WHERE MemberID = 2;
 
--- نمایش نتایج بعد از تغییرات برای تأیید
+-- Results
 SELECT 'After DELETE: Loans without MemberID=1, BookID=4' AS Info;
 SELECT * FROM Loans;
 
