@@ -1,4 +1,4 @@
--- Delete Tablse
+-- Delete Tables
 DROP TABLE IF EXISTS Loans;
 DROP TABLE IF EXISTS Books;
 DROP TABLE IF EXISTS Authors;
