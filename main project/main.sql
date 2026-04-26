@@ -1,4 +1,5 @@
--- Database Library
+-- Library database
+-- SQLite Version 
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Members (
     MemberID INTEGER PRIMARY KEY AUTOINCREMENT,
