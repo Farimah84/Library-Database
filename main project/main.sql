@@ -69,7 +69,7 @@ INSERT INTO Loans (MemberID, BookID, LoanDate, ReturnDate, Status) VALUES
 (5, 5, '2024-06-25', NULL, 'Borrowed');
 
 -- ============================================================
--- Start Query
+-- Start Queries
 -- ============================================================
 
 -- 1. SELECT WHERE LIKE
