@@ -1,2 +1,2 @@
-*.sql linguist-language=SQLite
-*.sql linguist-language=TSQL
+*.sql linguist-language=SQLite text
+*.sql linguist-language=TSQL text
