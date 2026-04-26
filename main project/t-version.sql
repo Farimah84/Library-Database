@@ -1,4 +1,5 @@
--- Database Library - T-SQL Version
+-- Library database 
+-- T-SQL Version
 -- ============================================================
 CREATE TABLE Members (
     MemberID INT IDENTITY(1,1) PRIMARY KEY,
@@ -36,7 +37,7 @@ CREATE TABLE Loans (
     FOREIGN KEY (BookID) REFERENCES Books(BookID) ON DELETE CASCADE
 );
 
--- Insert Data (همانند قبل، فقط نقطه‌ویرگول‌ها حذف شدند)
+-- Insert Data 
 INSERT INTO Members (FirstName, LastName, Email) VALUES
 ('Farimah', 'Nourpanah', 'farimahnourpanah@email.com'),
 ('Mahshad', 'Salehi', 'mahshadsalehi@email.com'),
@@ -68,7 +69,7 @@ INSERT INTO Loans (MemberID, BookID, LoanDate, ReturnDate, Status) VALUES
 (5, 5, '2024-06-25', NULL, 'Borrowed');
 
 -- ============================================================
--- Queries (دستورات جستجو - بدون تغییر عمده)
+-- Queries
 -- ============================================================
 
 SELECT * FROM Members WHERE FirstName LIKE 'F%';
