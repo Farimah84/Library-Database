@@ -1,4 +1,4 @@
-# Library Database System (SQLite Version)
+# Library Database System
 
 A student academic project for a **Database course** – a complete SQLite database schema for a small library management system.  
 The project demonstrates core database concepts including table creation, relationships (foreign keys), sample data insertion, and essential SQL queries (selection, filtering, joins, set operations, `DELETE`, `UPDATE`).
