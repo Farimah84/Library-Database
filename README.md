@@ -76,3 +76,21 @@ The script contains 13 queries demonstrating essential SQL concepts:
 | 11 | EXCEPT | Books by author 1 but NOT having >2 copies |
 | 12 | DELETE | Remove a specific loan (MemberID=1, BookID=4 with NULL ReturnDate) |
 | 13 | UPDATE | Change email of member with MemberID=2 |
+
+The script also includes SELECT statements after the DELETE and UPDATE operations to show the results.
+
+## Notes
+- This project was developed individually as part of a university database course.
+- The database uses SQLite, so it requires no separate database server – everything is contained in a single file.
+- BirthYear for Samad Behrangi is simplified to 1939 (actual Iranian year 1339 ≈ 1960 CE).
+- The Status field in Loans can be 'Borrowed', 'Returned', or 'Overdue'.
+- The script includes two data modification statements (DELETE and UPDATE) with result verification queries.
+
+## License
+This project is open source and available under the MIT License. Feel free to use it for learning or teaching purposes.
+
+## Author
+
+[Farimah Nourpanah]
+- [Email](farimahnourpanah@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/farimah-nourpanah)
