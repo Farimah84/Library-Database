@@ -37,9 +37,9 @@ All foreign keys are defined with `ON DELETE CASCADE` to automatically remove de
    cd Library-Database
 
 2. Run the script using SQLite command-line:
-'''
+```
 sqlite3 library.db < main.sql
-'''
+```
 - This will:
 
 - Create the database file library.db
@@ -60,3 +60,19 @@ sqlite3 library.db < main.sql
 
 ## Included SQL Queries (Educational Examples)
 The script contains 13 queries demonstrating essential SQL concepts:
+
+| # | Concept | Example |
+|---|---------|-------------|
+| 1 | LIKE pattern matching | Find members whose first name starts with 'F' |
+| 2 | BETWEEN | Find books with available copies between 2 and 4 |
+| 3 | IN operator | Find books in 'Political' or 'Feminism' categories |
+| 4 | DISTINCT | List unique book categories | 
+| 5 | ORDER BY | Sort members by last name descending |
+| 6 | CROSS JOIN | Cartesian product of members and books |
+| 7 | JOIN (two tables) | List each book with its author's full name |
+| 8 | JOIN (three tables) | Show loan details with member names and book titles |
+| 9 | UNION | Books either by author 1 OR with >2 copies | 
+| 10 | INTERSECT | Books both by author 1 AND with >2 copies |
+| 11 | EXCEPT | Books by author 1 but NOT having >2 copies |
+| 12 | DELETE | Remove a specific loan (MemberID=1, BookID=4 with NULL ReturnDate) |
+| 13 | UPDATE | Change email of member with MemberID=2 |
