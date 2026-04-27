@@ -38,7 +38,7 @@ All foreign keys are defined with `ON DELETE CASCADE` to automatically remove de
    cd Library-Database
    ```
 
-2. Run the script using SQLite command-line:
+2. **Run the script using SQLite command-line:**
 ```
 sqlite3 library.db < main.sql
 ```
@@ -52,7 +52,7 @@ sqlite3 library.db < main.sql
 
 - Execute 13 demonstration queries
 
-3. Alternative – Open main.sql in a SQLite GUI and execute it directly.
+3. **Alternative** – Open main.sql in a SQLite GUI and execute it directly.
 
 ## Sample Data Overview
 - Members: Farimah Nourpanah, Mahshad Salehi, Babak Matin Azad, Shabnam Shapoury, Artin Panahi
