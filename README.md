@@ -32,9 +32,11 @@ All foreign keys are defined with `ON DELETE CASCADE` to automatically remove de
 ### Setup Instructions
 
 1. **Clone the repository** (or download the `main.sql` file):
-   ```bash
+   ```
+   bash
    git clone https://github.com/Farimah84/Library-Database.git
    cd Library-Database
+   ```
 
 2. Run the script using SQLite command-line:
 ```
