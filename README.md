@@ -84,7 +84,6 @@ The script also includes SELECT statements after the DELETE and UPDATE operation
 ## Notes
 - This project was developed individually as part of a university database course.
 - The database uses SQLite, so it requires no separate database server – everything is contained in a single file.
-- BirthYear for Samad Behrangi is simplified to 1939 (actual Iranian year 1339 ≈ 1960 CE).
 - The Status field in Loans can be 'Borrowed', 'Returned', or 'Overdue'.
 - The script includes two data modification statements (DELETE and UPDATE) with result verification queries.
 
