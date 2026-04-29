@@ -86,7 +86,7 @@ SELECT Members.FirstName, Books.Title FROM Members CROSS JOIN Books;
 
 SELECT 
     Books.Title,
-    Authors.FirstName + ' ' + Authors.LastName AS AuthorName  -- توجه: || در T-SQL نیست
+    Authors.FirstName + ' ' + Authors.LastName AS AuthorName
 FROM Books 
 JOIN Authors ON Books.AuthorID = Authors.AuthorID;
 
