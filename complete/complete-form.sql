@@ -7,7 +7,6 @@ CREATE TABLE IF NOT EXISTS Members (
     Email VARCHAR(50)
 );
 
-
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Authors (
     AuthorID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -16,7 +15,6 @@ CREATE TABLE IF NOT EXISTS Authors (
     BirthYear INTEGER,
     Country VARCHAR(30)
 );
-
 
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Books (
@@ -29,7 +27,6 @@ CREATE TABLE IF NOT EXISTS Books (
     FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID) ON DELETE CASCADE
 );
 
-
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Loans (
     LoanID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -41,7 +38,6 @@ CREATE TABLE IF NOT EXISTS Loans (
     FOREIGN KEY (MemberID) REFERENCES Members(MemberID) ON DELETE CASCADE,
     FOREIGN KEY (BookID) REFERENCES Books(BookID) ON DELETE CASCADE
 );
-
 
 -- ============================================================
 INSERT INTO Members (FirstName, LastName, Email) VALUES
@@ -65,7 +61,8 @@ INSERT INTO Books (Title, AuthorID, Publisher, Category, AvailableCopies) VALUES
 ('A Room of Ones Own', 2, 'Niloufar Publishing', 'Feminism', 2),
 ('The Compelete Poems of Forough', 3, 'Negah Publishing', 'Poetical', 4),
 ('Siavash-Khani', 4, 'Roushan-Fekran Publishing', 'Dramatic Literature', 1),
-('Little Black Fish', 5, 'Nazar Publishing', 'Narrative Fiction', 3);
+('Little Black Fish', 5, 'Nazar Publishing', 'Narrative Fiction', 3),
+('Animal Farm', 1, 'Mahi Publishing', 'Political', 3); 
 
 -- ============================================================
 INSERT INTO Loans (MemberID, BookID, LoanDate, ReturnDate, Status) VALUES
@@ -79,13 +76,9 @@ INSERT INTO Loans (MemberID, BookID, LoanDate, ReturnDate, Status) VALUES
 -- ============================================================
 SELECT * FROM Members;
 
-
--- ============================================================
 SELECT * FROM Books WHERE AvailableCopies > 0;
 
--- ============================================================
 SELECT * FROM Books WHERE AuthorID = 2;
-
 -- ============================================================
 SELECT 
     b.BookID,
