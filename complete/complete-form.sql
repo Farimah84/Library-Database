@@ -2,29 +2,29 @@
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Members (
     MemberID INTEGER PRIMARY KEY AUTOINCREMENT,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50) NOT NULL,
-    Email VARCHAR(100)
+    FirstName VARCHAR(30) NOT NULL,
+    LastName VARCHAR(30) NOT NULL,
+    Email VARCHAR(50)
 );
 
 
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Authors (
     AuthorID INTEGER PRIMARY KEY AUTOINCREMENT,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50) NOT NULL,
+    FirstName VARCHAR(30) NOT NULL,
+    LastName VARCHAR(30) NOT NULL,
     BirthYear INTEGER,
-    Country VARCHAR(50)
+    Country VARCHAR(30)
 );
 
 
 -- ============================================================
 CREATE TABLE IF NOT EXISTS Books (
     BookID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Title VARCHAR(200) NOT NULL,
+    Title VARCHAR(100) NOT NULL,
     AuthorID INTEGER NOT NULL,
-    Publisher VARCHAR(100),
-    Category VARCHAR(50),
+    Publisher VARCHAR(50),
+    Category VARCHAR(30),
     AvailableCopies INTEGER DEFAULT 1,
     FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID) ON DELETE CASCADE
 );
