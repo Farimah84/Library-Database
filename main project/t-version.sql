@@ -61,12 +61,12 @@ INSERT INTO Books (Title, AuthorID, Publisher, Category, AvailableCopies) VALUES
 ('Animal Farm', 1, 'Mahi Publishing', 'Political', 3);
 
 INSERT INTO Loans (MemberID, BookID, LoanDate, ReturnDate, Status) VALUES
-(1, 1, '2024-06-01', '2024-06-14', 'Returned'),
-(2, 2, '2024-06-05', NULL, 'Borrowed'),
-(3, 3, '2024-06-10', '2024-06-23', 'Returned'),
-(1, 4, '2024-06-15', NULL, 'Borrowed'),
-(4, 1, '2024-06-20', NULL, 'Overdue'),
-(5, 5, '2024-06-25', NULL, 'Borrowed');
+(1, 1, '2026-06-01', '2024-06-14', 'Returned'),
+(2, 2, '2026-06-05', NULL, 'Borrowed'),
+(3, 3, '2026-06-10', '2024-06-23', 'Returned'),
+(1, 4, '2026-06-15', NULL, 'Borrowed'),
+(4, 1, '2026-06-20', NULL, 'Overdue'),
+(5, 5, '2026-06-25', NULL, 'Borrowed');
 
 -- ============================================================
 -- Queries
