@@ -1,0 +1,100 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# ============================================
+# Virtual Environment
+# ============================================
+.venv
+.virtualenv
+venv/
+env/
+myenv/
+
+# ============================================
+# IDE / Editor
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.desktop.ini
+*.sublime-*
+.project
+.pydevproject
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================
+# Database files (IMPORTANT)
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+
+# ============================================
+# Logs and temporary files
+# ============================================
+*.log
+*.tmp
+temp/
+logs/
+*.pid
+
+# ============================================
+# TensorFlow / Keras
+# ============================================
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.index
+*.data-*
+model_checkpoints/
+checkpoints/
+
+# ============================================
+# OS generated files
+# ============================================
+Thumbs.db
+ehthumbs.db
+*.DS_Store
+*.dll
+*.exe
+
+# ============================================
+# Project specific (Local configuration)
+# ============================================
+config_local.py
+.env
+.venv/
+
+# Binary files from training
+*.npy
+*.npz
+
+# TensorBoard logs
+logs/
+runs/
